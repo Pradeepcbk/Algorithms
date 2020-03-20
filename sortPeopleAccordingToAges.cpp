@@ -1,17 +1,14 @@
-// dummy.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <iostream>
 #include <string>
 #include <algorithm>
-#include<fstream>
+#include <fstream>
 #include <iostream>
 #include <sstream>
 #include <vector>
 #include <map>
 #include <functional>
-#include<string>
+#include <string>
 
 using namespace std;
 
