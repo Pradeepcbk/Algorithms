@@ -37,7 +37,6 @@ Problem statement: Given a list of people and their ages, sort them in the desce
 #include <vector>
 #include <string>
 
-
 class Person {
 	private:
 		int age;
@@ -70,7 +69,7 @@ int main() {
 	}
 	// Use the in-build sort library in STL with a custom predicate "compare"
 	sort(myVector.begin(), myVector.end(), compare);
-	std::cout << "The list of people in the decreasing order of their age: \n";
+	std::cout << "The list of people in the decreasing order of their age is: \n";
 	for (auto personCounter : myVector) {
 		std::cout << personCounter.getName() + " " << personCounter.getAge() << std::endl;
 	}
