@@ -43,7 +43,7 @@ std::map<int, std::vector<double>> readCSV(std::ifstream& fin) {
 	// Check if it is not opened successfully
 	if (!fin) {
 		std::cout << "Error, could not open the file";
-		std::vector<double> myVector = { 0,0 };
+		std::vector<double> myVector = { INT_MAX };
 		std::map<int, std::vector<double>> myMap;
 		myMap.insert(std::pair<int, std::vector<double>>(0, myVector));
 		return myMap;
@@ -70,13 +70,17 @@ int main()
 {
 	// Open the inertial sensor measurement file
 	std::ifstream fin;
-	fin.open("data.csv");
+	fin.open("data.csv");									// File to be opened
 	std::map<int, std::vector<double>> accelerationData = readCSV(fin);
-	if (accelerationData[0][0] == 0) {
+	if (accelerationData[0][0] == INT_MAX) {
 		std::cout << "File reading unsuccessful \n";
 	}
 	else {
 		std::cout << "File reading successful \n";
+		std::cout << "Contents of the file in the format ax,ay,az\n";
+		for (auto value : accelerationData) {
+			std::cout << value.second[0] << "," << value.second[1] << "," << value.second[2] << std::endl;
+		}
 	}
     return 0;
 }
