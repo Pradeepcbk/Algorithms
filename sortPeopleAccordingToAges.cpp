@@ -3,7 +3,7 @@
 *
 * The MIT License (MIT)
 *
-* Copyright (c) 2017, Prajwal Nagaraja
+* Copyright (c) 2017, Pradeep Siddagangaiah
 *
 * Permission is hereby granted, free of charge, to any person
 * obtaining a copy of this software and associated documentation
@@ -27,30 +27,27 @@
 *
 */
 
+/**
+Problem statement: Given a list of people and their ages, sort them in the descending order of their ages
+*/
+
 #include "stdafx.h"
 #include <iostream>
-#include <string>
 #include <algorithm>
-#include<fstream>
-#include <iostream>
-#include <sstream>
 #include <vector>
-#include <map>
-#include <functional>
-#include<string>
+#include <string>
 
-using namespace std;
 
 class Person {
 	private:
 		int age;
-		string name;
+		std::string name;
 	public:
-		Person(string s, int n): name(s), age(n){}
+		Person(std::string s, int n): name(s), age(n){}
 		int getAge() {
 			return age;
 		}
-		string getName() {
+		std::string getName() {
 			return name;
 		}
 };
@@ -60,22 +57,43 @@ bool compare(Person p1, Person p2) {
 }
 
 int main() {
-	int n, age;				// Number of people, their age
-	string name;			// Name of the people
-	cout << "Enter the number of people \n";
-	cin >> n;
-	cout << "Enter data in the format: Name Age \n";
-	vector<Person> myVector;
+	int n, age;																				// Number of people, their age
+	std::string name;																		// Name of the people
+	std::cout << "Enter the number of people \n";
+	std::cin >> n;
+	std::cout << "Enter data in the format: Name Age \n";
+	std::vector<Person> myVector;
 	for (int i = 0; i < n;i++) {
-		cin >> name >> age;
+		std::cin >> name >> age;
 		Person p(name, age);
 		myVector.push_back(p);
 	}
+	// Use the in-build sort library in STL with a custom predicate "compare"
 	sort(myVector.begin(), myVector.end(), compare);
-	cout << "The list of people in the decreasing order of their age is: \n";
+	std::cout << "The list of people in the decreasing order of their age is: \n";
 	for (auto personCounter : myVector) {
-		cout << personCounter.getName() + " " << personCounter.getAge() << endl;
+		std::cout << personCounter.getName() + " " << personCounter.getAge() << std::endl;
 	}
 
 	return 0;
 }
+
+/**
+Example input: 
+Enter the number of people
+5
+Enter data in the format: Name Age
+Akshay 24
+Gowtham 25
+Bharath 27
+Suhas 26
+Pradeep 27
+
+Example output:
+The list of people in the decreasing order of their age is:
+Bharath 27
+Pradeep 27
+Suhas 26
+Gowtham 25
+Akshay 24
+*/
