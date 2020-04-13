@@ -25,6 +25,23 @@
 * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
 *
+* There are 4 people sitting in a library - Gowtham, Sandeep, Suhas and Pradeep. Each of them like to read books of certain genre. The task is to find genre liked by each of them. Keep in mind that a person might like more than 1 genre.
+
+* Data:
+* Books: Mookajjiya Kanasugalu, Jugaari Cross, Yana, Martian, What got you here won't get you there, A Murder is announced, A girl on the train
+* Genre: Intellectual, Suspense Thriller, Personality development, Science Fiction, Family Drama
+
+* Intellectual: Mookajjiya Kanasugalu
+* Personality Development: What got you here won't get you there
+* Suspense Thriller: Jugaari Cross, A Murder is announced
+* Family Drama: A girl on the train
+* Science Fiction: Yana, Martian
+
+* Information Provided: 
+* Gowtham likes "A girl on the train" and "What got you here won't get you there"
+* Pradeep likes "Yana", "Martian" and "Jugaari Cross"
+* Sandeep likes "Mookajjiya Kanasugalu", "Jugaari Cross" and "A Murder is announced"
+* Suhas likes "A girl on the train" and "Yana"
 */
 
 #include "stdafx.h"
@@ -92,3 +109,11 @@ int main() {
 	}
 	return 0;
 }
+
+/**
+* Expected output:
+* Gowtham likes Family Drama and Personality Development books
+* Pradeep likes Science Fiction
+* Sandeep likes Suspense Thriller
+* Suhas likes Family Drama and Science Fiction
+*/
