@@ -27,7 +27,8 @@
 *
 */
 
-// In a large string find the distance between substrings corresponding to the word "programmer"
+// In a large string find the distance between substrings corresponding to the word "programmer". The characters need not be in the same order in the string and can be permutated.
+
 #include <iostream>
 #include <map>
 #include <vector>
@@ -37,8 +38,6 @@
 #include <functional>
 #include <stack>
 #include <unordered_map>
-
-#define MAXCOUNTER 2
 
 using namespace std;
 
