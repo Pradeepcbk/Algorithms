@@ -25,7 +25,7 @@
 * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
 *
-* There are 4 people sitting in a library - Gowtham, Sandeep, Suhas and Pradeep. Each of them like to read books of certain genre. The task is to find genre liked by each of them. Keep in mind that a person might like more than 1 genre.
+* There are 4 people sitting in a library - Gowtham, Sandeep, Suhas and Pradeep. Each of them like to read books of certain genre. The task is to find the most liked genres by each of them. Keep in mind that a person might like more than 1 genre.
 
 * Data:
 * Books: Mookajjiya Kanasugalu, Jugaari Cross, Yana, Martian, What got you here won't get you there, A Murder is announced, A girl on the train
