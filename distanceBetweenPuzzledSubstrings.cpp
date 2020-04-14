@@ -27,7 +27,9 @@
 *
 */
 
-// In a large string find the distance between substrings corresponding to the word "programmer". The characters need not be in the same order in the string and can be permutated.
+/** In a large string find the distance between substrings corresponding to the word "programmer". 
+* The characters need not be in the same order in the string and can be permutated.
+*/
 
 #include <iostream>
 #include <map>
