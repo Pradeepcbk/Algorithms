@@ -49,7 +49,7 @@ map<char, int> charOccurence;
 int indexLastCharacterFirstStringOccurence, indexFirstCharacterSecondStringOccurence;
 
 
-bool findChar(char ch, int index) {
+bool checkChar(char ch, int index) {
 	if (charOccurence[ch] < expectedCharOccurence[ch]) {
 		charOccurence[ch]++;
 	}
@@ -86,7 +86,7 @@ int main() {
 		char character = line[i];
 		// Check if the character makes the string "programmer" in any permutation
 		if (find(myVector.begin(), myVector.end(), character) != myVector.end()) {
-			bool compare = findChar(character, i);
+			bool compare = checkChar(character, i);
 			if (compare) {
 				// if the string appears for the first time, store its index
 				if (stringCounter == 1) {
