@@ -116,8 +116,8 @@ int main() {
 
 /**
 * Expected output:
-* Gowtham likes Family Drama and Personality Development books
-* Pradeep likes Science Fiction
-* Sandeep likes Suspense Thriller
-* Suhas likes Family Drama and Science Fiction
+* Gowtham likes books of genre Personality Development & Family Drama
+* Pradeep likes books of genre Science Fiction
+* Sandeep likes books of genre Suspense Thriller
+* Suhas likes books of genre Family Drama & Science Fiction
 */
