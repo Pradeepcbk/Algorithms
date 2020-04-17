@@ -1,13 +1,16 @@
 /*!**************************************************************************/
-/*	\file 		findTheMostLikedGenreOfBooks.cpp
+/*	\file 		distanceBetweenPuzzledSubstrings.cpp
+ *
+ *	\description 	Find the lexicographically largest substring
  *	\author		Pradeep Siddagangaiah
  *	\date		17-April-2020
- * 	\description	Find the lexicographically largest substring
- /** Sample Test case:
+ */
+/***************************************************************************/
+
+/** Test case
  * input: sadrszz
  * output: zz
- */
-/****************************************************************************/
+*/
 
 #include <iostream>
 #include <map>
