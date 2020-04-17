@@ -1,35 +1,30 @@
+/*!**************************************************************************/
+/*	\file 		distanceBetweenPuzzledSubstrings.cpp
+ *
+ *	\description 	Given a list of people and their ages, sort them in the descending order of their ages
+ *	\author		Pradeep Siddagangaiah
+ *	\date		17-April-2020
+ */
 /**
-* @section License
-*
-* The MIT License (MIT)
-*
-* Copyright (c) 2017, Pradeep Siddagangaiah
-*
-* Permission is hereby granted, free of charge, to any person
-* obtaining a copy of this software and associated documentation
-* files (the "Software"), to deal in the Software without
-* restriction, including without limitation the rights to use, copy,
-* modify, merge, publish, distribute, sublicense, and/or sell copies
-* of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be
-* included in all copies or substantial portions of the Software.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-* NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
-* BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
-* ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-* CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
-*/
+ * Example input: 
+ * Enter the number of people
+ * 5
+ * Enter data in the format: Name Age
+ * Akshay 24
+ * Gowtham 25
+ * Bharath 27
+ * Suhas 26
+ * Pradeep 27
 
-/**
-Problem statement: Given a list of people and their ages, sort them in the descending order of their ages
+ * Example output:
+ * The list of people in the decreasing order of their age is:
+ * Bharath 27
+ * Pradeep 27
+ * Suhas 26
+ * Gowtham 25
+ * Akshay 24
 */
+/***************************************************************************/
 
 #include "stdafx.h"
 #include <iostream>
@@ -76,23 +71,3 @@ int main() {
 
 	return 0;
 }
-
-/**
-Example input: 
-Enter the number of people
-5
-Enter data in the format: Name Age
-Akshay 24
-Gowtham 25
-Bharath 27
-Suhas 26
-Pradeep 27
-
-Example output:
-The list of people in the decreasing order of their age is:
-Bharath 27
-Pradeep 27
-Suhas 26
-Gowtham 25
-Akshay 24
-*/
