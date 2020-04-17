@@ -1,5 +1,4 @@
 # Algorithms
-==============
 This repository contains group of algorithms relating to string manipulation, graph traversal and other logic developments in C++. 
 
 Compiler tool chains used:
