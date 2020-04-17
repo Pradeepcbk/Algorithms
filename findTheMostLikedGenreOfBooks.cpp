@@ -1,53 +1,37 @@
-/**
-* @section License
-*
-* The MIT License (MIT)
-*
-* Copyright (c) 2017, Pradeep Siddagangaiah
-*
-* Permission is hereby granted, free of charge, to any person
-* obtaining a copy of this software and associated documentation
-* files (the "Software"), to deal in the Software without
-* restriction, including without limitation the rights to use, copy,
-* modify, merge, publish, distribute, sublicense, and/or sell copies
-* of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be
-* included in all copies or substantial portions of the Software.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-* NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
-* BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
-* ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-* CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
-* Question:
-* There are 4 people sitting in a library - Gowtham, Sandeep, Suhas and Pradeep. 
-* Each of them like to read books of certain genre. 
-* The task is to find the most liked genres by each of them. 
-* Keep in mind that a person might like more than 1 genre.
+/*!**************************************************************************/
+/*	\file 		findTheMostLikedGenreOfBooks.cpp
+ *	\author		Pradeep Siddagangaiah
+ *	\date		17-April-2020
+ *
+ * Description of the problem statement:
+ * There are 4 people sitting in a library - Gowtham, Sandeep, Suhas and Pradeep. 
+ * Each of them like to read books of certain genre. 
+ * The task is to find the most liked genres by each of them. 
+ * Keep in mind that a person might like more than 1 genre.
 
-* Data:
-* Books: Mookajjiya Kanasugalu, Jugaari Cross, Yana, Martian, What got you here won't get you there, A Murder is announced, A girl on the train
-* Genre: Intellectual, Suspense Thriller, Personality development, Science Fiction, Family Drama
+ * Data:
+ * Books: Mookajjiya Kanasugalu, Jugaari Cross, Yana, Martian, What got you here won't get you there, A Murder is announced, A girl on the train
+ * Genre: Intellectual, Suspense Thriller, Personality development, Science Fiction, Family Drama
 
-* Genre to book information:
-* Intellectual: Mookajjiya Kanasugalu
-* Personality Development: What got you here won't get you there
-* Suspense Thriller: Jugaari Cross, A Murder is announced
-* Family Drama: A girl on the train
-* Science Fiction: Yana, Martian
+ * Genre to book information:
+ * Intellectual: Mookajjiya Kanasugalu
+ * Personality Development: What got you here won't get you there
+ * Suspense Thriller: Jugaari Cross, A Murder is announced
+ * Family Drama: A girl on the train
+ * Science Fiction: Yana, Martian
 
-* Information Provided: 
-* Gowtham likes "A girl on the train" and "What got you here won't get you there"
-* Pradeep likes "Yana", "Martian" and "Jugaari Cross"
-* Sandeep likes "Mookajjiya Kanasugalu", "Jugaari Cross" and "A Murder is announced"
-* Suhas likes "A girl on the train" and "Yana"
-*/
+ * Information Provided: 
+ * Gowtham likes "A girl on the train" and "What got you here won't get you there"
+ * Pradeep likes "Yana", "Martian" and "Jugaari Cross"
+ * Sandeep likes "Mookajjiya Kanasugalu", "Jugaari Cross" and "A Murder is announced"
+ * Suhas likes "A girl on the train" and "Yana"
+ 
+ * Expected output:
+ * Gowtham likes books of genre Personality Development & Family Drama
+ * Pradeep likes books of genre Science Fiction
+ * Sandeep likes books of genre Suspense Thriller
+ * Suhas likes books of genre Family Drama & Science Fiction
+/***************************************************************************/
 
 #include <iostream>
 #include <map>
@@ -113,11 +97,3 @@ int main() {
 	}
 	return 0;
 }
-
-/**
-* Expected output:
-* Gowtham likes books of genre Personality Development & Family Drama
-* Pradeep likes books of genre Science Fiction
-* Sandeep likes books of genre Suspense Thriller
-* Suhas likes books of genre Family Drama & Science Fiction
-*/
