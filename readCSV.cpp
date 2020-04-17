@@ -1,35 +1,17 @@
-/**
-* @section License
-*
-* The MIT License (MIT)
-*
-* Copyright (c) 2017, Pradeep Siddagangaiah
-*
-* Permission is hereby granted, free of charge, to any person
-* obtaining a copy of this software and associated documentation
-* files (the "Software"), to deal in the Software without
-* restriction, including without limitation the rights to use, copy,
-* modify, merge, publish, distribute, sublicense, and/or sell copies
-* of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be
-* included in all copies or substantial portions of the Software.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-* NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
-* BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
-* ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-* CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
-*/
-
-/**
-Problem Statement: To read in a csv file containing data in the format ax,ay,az
-*/
+/*!**************************************************************************/
+/*	\file 		distanceBetweenPuzzledSubstrings.cpp
+ *
+ *	\description 	Problem Statement: To read in a csv file containing data in the format ax,ay,az
+ *	\author		Pradeep Siddagangaiah
+ *	\date		17-April-2020
+ /**
+ * Sample input file will contain data of the format below:
+ * 0.947509765625,-0.6260833740234375,11.1258544921875
+ * 1.1061248779296875,-0.526123046875,11.4849853515625
+ * 1.12646484375,-0.4542999267578125,11.610076904296875
+ * 1.202484130859375,-0.462677001953125,11.66455078125
+ */
+/***************************************************************************/
 
 #include "stdafx.h"
 #include <fstream>
@@ -85,10 +67,3 @@ int main()
     return 0;
 }
 
-/**
-Sample input file will contain data of the format below:
-0.947509765625,-0.6260833740234375,11.1258544921875
-1.1061248779296875,-0.526123046875,11.4849853515625
-1.12646484375,-0.4542999267578125,11.610076904296875
-1.202484130859375,-0.462677001953125,11.66455078125
-*/
