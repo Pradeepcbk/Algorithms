@@ -1,5 +1,5 @@
 /*!**************************************************************************/
-/*	\file 		distanceBetweenPuzzledSubstrings.cpp
+/*	\file 		lexicographicallyLargestSubstring.cpp
  *
  *	\description 	Find the lexicographically largest substring
  *	\author		Pradeep Siddagangaiah
