@@ -1,3 +1,30 @@
+/*!**************************************************************************/
+/*	\file 		distanceBetweenPuzzledSubstrings.cpp
+ *
+ *	\description 	Construct a binary tree with the inputs and traverse it. Also, while building the tree, upon encountering the below
+ 			errors, stop constructing the tree and throw up the exception caused in the mentioned priorities
+			
+			E1 Invalid Input Format
+			E2 Duplicate Pair
+			E3 Parent Has More than Two Children
+			E4 Tree Contains Cycle
+			E5 Multiple Roots
+			
+ *
+ *	\author		Pradeep Siddagangaiah
+ *	\date		9-June-2020
+ */
+/***************************************************************************/
+
+/** Test case
+* input_1: (B,D) (D,E) (A,B) (C,F) (E,G) (A,C)
+* output_1: (A(B(D(E(G))))(C(F)))
+* input_2: (A,B) (A,C) (B,D) (D,C)
+* output_2: E4
+* Explanation: In input_2, Node D is both a child of B and a parent of C, but C and B are both child nodes of A. Since D tries to attach
+itself as parent to a node already above it in the tree, this forms a cycle.
+*/
+
 #include "stdafx.h"
 #include <map>
 #include <set>
