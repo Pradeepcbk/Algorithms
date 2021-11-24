@@ -1,3 +1,12 @@
+/*!**************************************************************************/
+/*	\file 		ComputeMean_Parallel_Programming.cpp
+ *
+ *	\description 	Computes mean of a set of pre-defined sensor readings. Multi-threading concept is used to perform this task.
+ *	\author		Pradeep Siddagangaiah
+ *	\date		24-November-2020
+ */
+/***************************************************************************/
+
 #include <iostream>
 #include <cstdio>
 #include <thread>
